@@ -1,45 +1,79 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="no-referrer" />
     <title>木蛮的编程之路</title>
+    <style>
+            /* * {
+              border: 1px solid black;
+            } */
+            body {
+              margin=0;
+              height: 100vh;
+            }
+            .flex {
+              display: flex;
+            }
+            .column {
+              flex-direction: column;
+              justify-content: space-between
+            }
+           .zi-center{
+      justify-content: center;
+      align-items: center;
+           }
+           
+    </style>
   </head>
-  <body>
-    <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
-      <img
-        src="https://c-ssl.duitang.com/uploads/item/201509/16/20150916145611_Fy2Wz.jpeg"
-        alt="木蛮"
-        width="80px"
-        height="80px"
-      />
-    </div>
-    <div
-      style="
-        max-width: 700px;
-        margin: 30px auto;
-        padding: 15px;
-        line-height: 1.7;
-        background-color: rgb(255, 244, 255);
-        color: rgb(255, 139, 160);
-      "
-    >
-      <!--因为块盒子默认铺满，不好看。所以设下宽度 默认靠左，还得center-->
-      <!--这里是为啥max-width而非width-->
-      <p>hello world,我是木蛮</p>
-      <p>这里将记录我的编程之路。</p>
-      <h1>祝我兔年生猛，生活有继</h1>
-    </div>
-    <div
-      style="
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 40px;
-        font-size: 12px;
-      "
-    >
-      <p>康老师的网站见下</p>
-      <a href="https://kangwenchang.com">友情链接</a>
-    </div>
+  <body class="flex column">
+    <shang style="height: 4rem; justify-content: space-between" class="flex">
+      <zuo style="width: 10rem" class="zi-center flex">
+        <div>我的github</div>
+      </zuo>
+      <you
+        style="height: 4rem; width: 20em; justify-content: space-between"
+        class="flex"
+      >
+        <div class="zi-center flex">
+          <div>导航1</div>
+        </div>
+        <div class="zi-center flex">
+          <div>导航2</div>
+        </div>
+        <div class="zi-center flex">
+          <div>导航3</div>
+        </div>
+        <div class="zi-center flex">
+          <div>导航4</div>
+        </div>
+      </you>
+    </shang>
+    <zhong style="align-items: center" class="flex column">
+      <a href="主界面.html"
+        ><img
+        
+          src="https://c-ssl.duitang.com/uploads/item/201509/16/20150916145611_Fy2Wz.jpeg"
+          alt="木蛮"
+          height="100px"
+          width="100px"
+          style="border-radius: 100%; overflow: hidden"
+        />
+      </a>
+      <name style="font-size: 1.75em" >木蛮</name>
+      <description class="flex column">
+        <p style="text-align: center;">一个努力成为很哇塞的程序员的自学者</p>
+        <i style="font-size: 0.75em;text-align: center;"
+          >Wie kann man frei sein, wenn man seinen eignen Schatten nie entgeht?
+        </i>
+      </description>
+    </zhong>
+    <xia style="height: 4rem">
+      <address  style="text-align: center; font-size: 0.65em;">
+        address：1363317897@qq.com</a>
+      </address>
+    </xia>
   </body>
 </html>

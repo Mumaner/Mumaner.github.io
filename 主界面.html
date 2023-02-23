@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>flex布局</title>
+    <style>
+                                                                          body{
+                                                                              margin=0;
+                                                                              height: 100vh;
+                                                                              background-color: #eee;
+                                                                          }
+                                                                          /* *{
+                                                                              border: 1px solid black;
+                                                                          } */
+                                                                          .flex{
+                                                                              display: flex;
+                                                                          }
+                                                                          .shadow{
+                                            box-shadow: rgb(0 0 0 /20%) 0px 2px 1px -1px,rgb(0 0 0 /14%) 0px 1px 1px 0px; rgb(0 0 0 /12%) 0px 1px 3px 0px
+                                                                          }
+                                                                          .white{
+                                                                    background-color: white;
+                                                                          }
+                                                                          .flex1{
+                                                              flex: 1;
+                                                                          }
+                                                                          .column{
+                                                        flex-direction: column;
+                                                                          }
+                                                                          .mg8{
+                                                  margin: 8px;
+                                                                          }
+                                                                          .mgr8{
+                                                                            margin-right: 8px;
+                                                                          }
+                                                                          .mgt8{
+                                                                            margin-top: 8px;
+                                                                          }
+                                                                          .navigator{
+                                      padding: 10px;
+                                       border-bottom: 1px solid rgb(190, 190, 190);
+                                       font-size: 14px;
+                                       color: #666;
+                                                                          }
+                                    @media (max-width:600px){
+                              .cebian{
+                        display: none;
+                              }
+                              .neirongqu-column{
+                  flex-direction: column;
+                              }
+
+                              .youqu{
+            margin-left: 8px;
+                              }
+                              .shuju{
+      margin: 0 0 8px;
+      flex: auto;
+                              }
+                                    }
+                                    .gundongtiao::-webkit-scrollbar{
+                                      display: none;
+                                    }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2" class="cebian white shadow">
+      <!--头像栏-->
+      <div
+        style="
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+          padding: 10px;
+        "
+        class="flex"
+      >
+        <!--头像图片-->
+        <div style="border-radius: 100%; overflow: hidden">
+          <img
+            src="https://c-ssl.duitang.com/uploads/item/201509/16/20150916145611_Fy2Wz.jpeg"
+            width="40 px"
+            height="40 px"
+            alt="木蛮"
+          />
+        </div>
+        <div style="margin-left: 10px">木蛮</div>
+      </div>
+      <!--导航栏-->
+      <div class="flex1">
+        <div class="navigator">导航栏</div>
+        <div class="navigator">导航栏</div>
+        <div class="navigator">导航栏</div>
+        <div class="navigator">导航栏</div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div style="height: 70px; z-index: 1" class="white shadow"></div>
+      <!--内容区-->
+      <div
+        style="overflow: auto"
+        class="gundongtiao flex flex1 neirongqu-column"
+      >
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区-->
+          <div class="flex neirongqu-column">
+            <div
+              style="height: 100px"
+              ;
+              class="shuju flex1 white mgr8 shadow"
+            ></div>
+            <div
+              style="height: 100px"
+              ;
+              class="shuju flex1 white mgr8 shadow"
+            ></div>
+            <div
+              style="height: 100px"
+              ;
+              class="shuju flex1 white mgr8 shadow"
+            ></div>
+            <div style="height: 100px" ; class="shuju flex1 white shadow"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <!--提示区-->
+          <div style="height: 150px" class="white shadow"></div>
+          <!--消息区-->
+          <div style="height: 300px" class="white mgt8 shadow"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
