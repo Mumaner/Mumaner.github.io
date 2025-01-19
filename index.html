@@ -1,79 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="no-referrer" />
-    <title>木蛮的编程之路</title>
-    <style>
-            /* * {
-              border: 1px solid black;
-            } */
-            body {
-              margin=0;
-              height: 100vh;
-            }
-            .flex {
-              display: flex;
-            }
-            .column {
-              flex-direction: column;
-              justify-content: space-between
-            }
-           .zi-center{
-      justify-content: center;
-      align-items: center;
-           }
-           
-    </style>
-  </head>
-  <body class="flex column">
-    <shang style="height: 4rem; justify-content: space-between" class="flex">
-      <zuo style="width: 10rem" class="zi-center flex">
-        <div>我的github</div>
-      </zuo>
-      <you
-        style="height: 4rem; width: 20em; justify-content: space-between"
-        class="flex"
-      >
-        <div class="zi-center flex">
-          <div>导航1</div>
-        </div>
-        <div class="zi-center flex">
-          <div>导航2</div>
-        </div>
-        <div class="zi-center flex">
-          <div>导航3</div>
-        </div>
-        <div class="zi-center flex">
-          <div>导航4</div>
-        </div>
-      </you>
-    </shang>
-    <zhong style="align-items: center" class="flex column">
-      <a href="主界面.html"
-        ><img
-        
-          src="https://c-ssl.duitang.com/uploads/item/201509/16/20150916145611_Fy2Wz.jpeg"
-          alt="木蛮"
-          height="100px"
-          width="100px"
-          style="border-radius: 100%; overflow: hidden"
-        />
-      </a>
-      <name style="font-size: 1.75em" >木蛮</name>
-      <description class="flex column">
-        <p style="text-align: center;">一个努力成为很哇塞的程序员的自学者</p>
-        <i style="font-size: 0.75em;text-align: center;"
-          >Wie kann man frei sein, wenn man seinen eignen Schatten nie entgeht?
-        </i>
-      </description>
-    </zhong>
-    <xia style="height: 4rem">
-      <address  style="text-align: center; font-size: 0.65em;">
-        address：1363317897@qq.com</a>
-      </address>
-    </xia>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mumaner</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1>木蛮的小窝</h1>
+        <!-- 导航栏（项目待确定） -->
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="archive.html">目录</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 主体内容 -->
+    <main>
+        <!-- 最新文章展示-->
+        <section id="posts">
+            <h2>最新文章</h2>
+            <!-- <article>
+                <h3><span id="post-title"></span></h3>
+                <p>内容：<span id="post-truncatedcontent"></span></p>
+                <a href="output/posts/post.html">阅读更多</a>
+            </article> -->
+            <div id="post-list"></div>
+        </section>
+    </main>
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 木蛮</p>
+        <address>联系我：<a href="mailto:1363317897@qq.com">1363317897@qq.com</a></address>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
 </html>
